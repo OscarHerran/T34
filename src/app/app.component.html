@@ -1,0 +1,33 @@
+<main>
+  <header><h1>Calculator</h1></header>
+      <input type="text" class="pantalla"
+      placeholder="0" id="pantalla" value={{result}} name="pantalla"/>  <!--CON LA ANEXIÓN DE LA INTERPOLACIÓN OBTENDREMOS EL RESULTADO IMPRESO EN LA PANTALLA-->
+     <!--UBICACIÓN DEL GRID CON LOS BOTONES-->
+      <div class="calculum">
+                  <!--MANERA DE LLAMAR A FUNCIONES DEL TECLADO-->
+        <button class="item23" id="delete" (click)="deleting()">Retr</button>
+        <button class="item1" id="delete" (click)="deleting()">CE</button>
+        <button class="item2" id="delete" (click)="deleting()">C</button>
+        <button class="item3" (click)="calculum('1')">1</button>
+        <button class="item4" (click)="calculum('2')">2</button>
+        <button class="item5" (click)="calculum('3')">3</button>
+        <button class="item6" (click)="calculum('4')">4</button>
+        <button class="item7" (click)="calculum('5')">5</button>
+        <button class="item8" (click)="calculum('6')">6</button>
+        <button class="item9" (click)="calculum('7')">7</button>
+        <button class="item10" (click)="calculum('8')">8</button>
+        <button class="item11" (click)="calculum('9')">9</button>
+        <button class="item12" (click)="operador('divide')">/</button>
+        <button class="item13" (click)="operador('raiz')">Raiz</button>
+        <button class="item14" (click)="operador('multiplica')">*</button>
+        <button class="item15" (click)="operador('residuo')">%</button>
+        <button class="item16" (click)="operador('resta')">-</button>
+        <button class="item17" (click)="operador('potencia')">1/x</button>
+        <button class="item18" (click)="calculum('.')">.</button>
+        <button class="item19" (click)="operador('suma')">+</button>
+        <button class="item20" (click)="equals()">=</button>
+        <button class="item21" (click)="calculum('0')">0</button>
+        <button class="item22" (click)="operador('negativo')">+/-</button>
+      </div>
+</main>
+
